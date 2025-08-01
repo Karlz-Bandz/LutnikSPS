@@ -1,43 +1,124 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pracownia Lutnicza SPS</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pracownia Lutnicza SPS</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Pracownia Lutnicza SPS</h1>
-    <nav>
-      <a href="#o-nas">O nas</a>
-      <a href="#oferta">Oferta</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" />
+            </div>
+            <nav class="menu">
+                <a href="#about">O nas</a>
+                <a href="#services">Oferta</a>
+                <a href="#gallery">Galeria</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+        </div>
+   
+     <div id="main">
+        <h1>Struna Po Strunie</h1>
+        <h3>PRACOWNIA LUTNICZA - Warszawa</h3>
 
-  <section id="o-nas">
-    <h2>O nas</h2>
-    <p>Specjalizujemy się w naprawie, konserwacji i budowie instrumentów smyczkowych.</p>
-  </section>
+        <p><strong>Witamy w naszej pracowni</strong></p>
+        <p>
+            Miejscu stworzonym przez muzyków, dla muzyków.
+            Oferujemy pełen zakres usług: od serwisu po renowację gitar
+            i innych instrumentów szarpanych. Każdy instrument traktujemy
+            indywidualnie, z pasją i precyzją.
+        </p>
 
-  <section id="oferta">
-    <h2>Nasza oferta</h2>
-    <ul>
-      <li>Naprawa skrzypiec i altówek</li>
-      <li>Budowa instrumentów</li>
-      <li>Doradztwo i wycena</li>
-    </ul>
-  </section>
+        <a href="#services" class="btn">Zobacz więcej</a>
 
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p>Email: kontakt@lutnik-sps.com</p>
-    <p>Telefon: +48 123 456 789</p>
-  </section>
+        <div id="image-row-pht">
+            <img src="images/pracownia.jpg" alt="pracownia" />
+            <img src="images/guitar1.jpg" alt="guitar1" />
+        </div>
+    </div>
 
-  <footer>
-    <p>&copy; 2025 izzisoft</p>
-  </footer>
+    <div id="about">
+        <div id="image-row-pht">
+            <img src="images/sps2.jpg" alt="sps2" />
+        </div>
+       
+        <h1>O nas</h1>
+
+        <p>
+            Jesteśmy pasjonatami, którzy rozumieją, że gitara to nie tylko
+            instrument – to zapis emocji i doświadczeń, który nadaje instrumentowi
+            niepowtarzalny charakter. To miejsce powstało z potrzeby dbania o te wyjątkowe
+            przedmioty z należnym im szacunkiem. W naszej pracowni każdy detal ma znaczenie.
+            Nasz główny specjalista Konstanty posiada bogate doświadczenie i od najmłodszych
+            lat postrzega każdą gitarę nie tylko jako narzędzie do tworzenia sztuki, lecz jaką
+            sztukę samą w sobie. To podejście gwarantuje najwyższą jakość usług i indywidualne
+            podejście do każdego instrumentu. Jeśli szukasz miejsca, gdzie Twoja gitara zostanie
+            potraktowana z pełnym profesjonalizmem, sercem i zrozumieniem – zapraszamy do naszej
+            pracowni. Każdy projekt traktujemy z pasją i zaangażowaniem, a satysfakcja naszych
+            klientów jest dla nas największą nagrodą. Przyjdź, poznaj nas osobiście i powierz nam
+            swój instrument – sprawimy, że na nowo się w nim zakochasz!
+        </p>
+
+        <a href="#contact" class="btn">Kontakt</a>
+
+    </div>
+
+    <div id="services">
+        <h1>Nasza oferta</h1>
+        <h2>*Uwaga! Ustalić dokładną i ostateczną cenę usługi możemy tylko po diagnostyce w naszej pracowni.</h2>
+        <div id="services-list"></div>
+    </div>
+
+    <div id="gallery">
+        <h1>Galeria</h1>
+
+        <div id="gallery-box">
+            <img src="images/facebook.svg" alt="facebook" />
+            <img src="images/instagram.svg" alt="instagram" />
+            <img src="images/youtube.svg" alt="youtube" />
+        </div>
+
+        <p>Zapraszamy Cię za kulisy naszej pracowni. Na social mediach znajdziesz fragmenty naszej codziennej pracy</p>
+    </div>
+
+    <div id="contact">
+        <h1>Skontaktuj się</h1>
+
+        <p>Jeśli chcesz dowiedzieć się więcej lub masz pytania – skontaktuj się z nami.</p>
+
+        <div id="contact-box">
+            <div class="contact-img">
+                <img src="images/phone.svg" alt="phone" />
+                <p>
+                    Telefon: 504703562
+                </p>
+            </div>
+
+            <div class="contact-img">
+                <img src="images/email.svg" alt="email" />
+                <p>
+                    Email: pracownia@lutnik-sps.com
+                </p>
+            </div>
+
+            <div class="contact-img">
+                <img src="images/location.svg" alt="location" />
+                <p>
+                    Milanowska 9, 02-487, Warszawa
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 izzisoft</p>
+    </footer>
+
+    <script src="services.js"></script>
+    <script src="navbar.js"></script>
 </body>
 </html>
