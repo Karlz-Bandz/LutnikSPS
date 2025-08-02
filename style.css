@@ -408,6 +408,7 @@ footer {
     max-height: 25px;
     z-index: 1;
     cursor: pointer;
+    opacity: 0.7;
 }
 
 footer p:hover {
