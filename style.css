@@ -11,8 +11,23 @@ body {
     margin: 0;
     padding: 0;
     padding-bottom: 60px;
-    background-image: url("images/old-paper.jpeg");
     margin-top: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/old-paper.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    z-index: 0;
+    pointer-events: none;
 }
 
 /* menu ---------------------------------- */
@@ -390,4 +405,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    max-height: 25px;
+    z-index: 1;
+    cursor: pointer;
 }
+
+footer p:hover {
+    color: pink;
+}
+
+
+
