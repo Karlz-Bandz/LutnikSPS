@@ -87,6 +87,52 @@
     <div id="gallery">
         <h1>Galeria</h1>
 
+        <div id="gallery-images">
+            <div class="image-container">
+                <iframe src="https://www.youtube.com/embed/usQIQ7AyQYE" title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="image-container">
+                <img src="images/gallery1.jpg" alt="gallery1" onclick="openLightbox(this.src)" />
+            </div>
+
+            <div class="image-container">
+                <iframe src="https://www.youtube.com/embed/W6Hcprz2zvs" title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="image-container">
+                <img src="images/gallery2.jpg" alt="gallery2" onclick="openLightbox(this.src)" />
+            </div>
+
+            <div class="image-container">
+                <iframe src="https://www.youtube.com/embed/tLFlRyjcR_g" title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="image-container">
+               <img src="images/gallery3.jpg" alt="gallery3" onclick="openLightbox(this.src)" />
+            </div>
+
+            <div class="image-container">
+               <img src="images/gallery4.jpg" alt="gallery4" onclick="openLightbox(this.src)" />
+            </div>
+            
+            <div id="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Full Image">
+                <span id="lightbox-close">✖</span>
+            </div>
+        </div>
+
+        <p>Zobacz więcej w naszych mediach społecznościowych!</p>
+
         <div id="gallery-box">
             <a href="https://www.facebook.com/profile.php?id=61574976467876" target="_blank">
                 <img src="images/facebook.svg" alt="facebook" />
@@ -152,6 +198,15 @@
                 menu.classList.remove("show");
             });
         });
+
+        function openLightbox(src) {
+            document.getElementById("lightbox-img").src = src;
+            document.getElementById("lightbox").style.display = "flex";
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
     </script>
 
 </body>
