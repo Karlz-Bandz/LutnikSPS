@@ -113,25 +113,27 @@ body {
 #main {
     text-align: center;
     padding: 60px 30px;
-    background-color: rgba(255, 252, 240, 0.9);
     margin: 40px auto;
     max-width: 1300px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     font-family: 'Georgia', serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pracownia.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; 
 }
 
 #main h1 {
     font-size: 4.5em;
     margin-bottom: 0.2em;
-    color: #3e2f1c;
     letter-spacing: 1px;
 }
 
 #main h2 {
     font-size: 3.8em;
     margin-bottom: 1.2em;
-    color: #6b4c2d;
     font-weight: normal;
     font-style: italic;
 }
@@ -139,16 +141,11 @@ body {
 #main p {
     font-size: 1.1em;
     line-height: 1.8;
-    color: #2a2a2a;
     margin-bottom: 1.2em;
     max-width: 660px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Inter', sans-serif;
-}
-
-#main p strong {
-    color: #000;
     font-weight: bold;
 }
 
@@ -170,19 +167,37 @@ body {
 }
 
 #image-row-pht {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 30px;
 }
 
 #image-row-pht img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    object-fit: contain;
+    max-height: 450px;
+    width: auto; 
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1024px) {
+    #main {
+        border-radius: 0;
+    }
+
+    #image-row-pht {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #image-row-pht img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        border-radius: 0;
+    }
 }
 
 /* about ---------------------------------- */
@@ -214,7 +229,13 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-#about #image-row-pht img {
+#about #image-row-about {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about #image-row-about img {
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
