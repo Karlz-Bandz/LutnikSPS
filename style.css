@@ -117,18 +117,24 @@ body {
 /* main ---------------------------------- */
 
 #main {
+    height: 84vh;
+    display: flex;      
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
     text-align: center;
     padding: 60px 30px;
-    margin: 40px auto;
+    margin: 0 auto;
     max-width: 1300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    box-shadow: none;
     font-family: 'Georgia', serif;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pracownia.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    border-radius: 10px;
 }
 
 #main h1 {
