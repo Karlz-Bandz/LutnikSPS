@@ -143,13 +143,13 @@ h3 {
 }
 
 #main h1 {
-    font-size: 4.5em;
-    margin-bottom: 0.2em;
+    font-size: 2.8em;
     letter-spacing: 1px;
 }
 
 #main h3 {
     margin-bottom: 1.2em;
+    margin-top: 1.2em;
 }
 
 #main p {
