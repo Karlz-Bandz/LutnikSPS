@@ -8,7 +8,7 @@ class Service {
 
 const services = [
   new Service("Pelna regulacja (setup)", "Korekta siodełka, ustawienie akcji strun, krzywizny gryfu, menzury, konserwacja podstrunnicy, wymiana strun, dokręcenie luźnych elementów, czyszczenie, diagnoza problemów, korekta ustawień uwzględniająca indywidualne styl gry i potrzeby każdego klienta.", "200 – 300 PLN"),
-  new Service("Szlif progow + setup", "", "500-600 PLN"),
+  new Service("Szlif progow + setup", "Wyrównanie wysokości progów, a następnie zaokrąglenie wierzchołków w celu eliminacji brzęczenia strun i poprawy intonacji.", "500-600 PLN"),
   new Service("Wymiana progow + setup", "Dokładna wycena po oględzinach instrumentu oraz wyboru części.", "Od 900 PLN"),
   new Service("Wymiana przetwornikow", "", "od 50 PLN/sztuka"),
   new Service("Wymiana przelacznika", "+ cena przełącznika", "50-80 PLN"),
