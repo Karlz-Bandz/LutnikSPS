@@ -539,8 +539,14 @@ footer {
     z-index: 1;
     cursor: pointer;
     opacity: 0.7;
+    font-family: 'Lobster Two', cursive;
 }
 
-footer p:hover {
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
     color: pink;
 }
