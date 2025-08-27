@@ -25,7 +25,7 @@
 
     <div class="navbar">
         <div class="logo">
-             <a href="#main"> <img src="images/logo.png" alt="Logo" /></a>
+            <a href="#main"> <img src="images/logo.png" alt="Logo" /></a>
         </div>
         <nav class="menu" id="menu">
             <a href="#about">O nas</a>
@@ -209,16 +209,47 @@
                 </a>
             </div>
         </div>
+
+        <div id="contact-form">
+            <h2>Wyslij wiadomosc</h2>
+            <form id="messageForm">
+                <div class="form-group">
+                    <label for="name">Imię</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Temat</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Wiadomość</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Wyslij</button>
+            </form>
+
+            <p id="form-status"></p>
+        </div>
+
     </div>
 
     <footer>
         <p>
-             <a href="https://github.com/Karlz-Bandz" target="_blank">&copy; 2025 izzisoft</a>
+            <a href="https://github.com/Karlz-Bandz" target="_blank">&copy; 2025 izzisoft</a>
         </p>
     </footer>
 
     <script src="services.js"></script>
     <script src="navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
     <script>
         const toggle = document.getElementById("mobile-toggle");
@@ -243,6 +274,31 @@
         function closeLightbox() {
             document.getElementById("lightbox").style.display = "none";
         }
+   
+        (function () {
+            emailjs.init("P32IVvDmUBqRtfZga"); 
+        })();
+
+        const form = document.getElementById("messageForm");
+        const statusEl = document.getElementById("form-status");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            statusEl.textContent = "Wysyłanie...";
+            statusEl.style.color = "black";
+
+            emailjs.sendForm("service_9ghtou8", "template_i85e07g", form)
+                .then(() => {
+                    statusEl.textContent = "Wiadomość wysłana pomyślnie ✅";
+                    statusEl.style.color = "green";
+                    form.reset();
+                }, (error) => {
+                    console.error("EmailJS Error:", error);
+                    statusEl.textContent = "Błąd podczas wysyłania ❌";
+                    statusEl.style.color = "red";
+                });
+        });
     </script>
 
 </body>

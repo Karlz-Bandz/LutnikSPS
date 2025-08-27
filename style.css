@@ -532,6 +532,50 @@ h3 {
     font-weight: 500;
 }
 
+#contact-form {
+    margin-top: 50px;
+    background: rgba(0,0,0,0.05);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#contact-form #messageForm .btn {
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#form-status {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
 /* footer ---------------------------------- */
 
 footer {
