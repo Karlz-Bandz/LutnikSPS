@@ -16,7 +16,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
     padding-top: 90px;
     position: relative;
     z-index: 1;
@@ -582,7 +582,7 @@ footer {
     background-color: #6b4c2d;
     color: white;
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     max-height: 25px;
